@@ -264,9 +264,33 @@ career here, you'll have to answer the following:
 - What, in your opinion, is an important part of code reviews? That is, what is
   something you pay attention to when you review code, and that you appreciate
   when others do the same for your code?
+  
+  It is of paramount importance that code, especially in a distributed environment, 
+  be properly documented in a way comprehensible to all stakeholders. Good comments 
+  make all code more comprehensible, extensible, and debuggable. The standard for comments 
+  should also include detailing the input and outputs of each function, class, or method, 
+  so that side effects can be better understood. Type declarations are also exceedingly important, 
+  not merely if one is using a strongly typed language (such as Scala or OCaml), but also 
+  in untyped languages, because it makes function composition more apprehensible. 
+  Functions such as loops are often unintuitive even to experienced engineers, 
+  so block comments on what a loop does are also helpful. 
+  
 - We have an awful lot of computers here, and it gets pretty confusing with
   slightly different things running on all of them. How could containers help us
   improve this situation?
+  
+  Containers, which are essentially virtual machines with their own private 
+  namespace, allow you to isolate not only software from hardware, but software
+  from other software (in the sense that versioning worries become otioise)! 
+  On the one hand, the container is a quarantine that allows reproducible testing. 
+  On the other, it also means each software module a developer creates can be 
+  isolated from his own node's idiosyncrasies of hardware and software. Moreover, 
+  a distributed team could easily mandate use of a single Dockerfile to ensure
+  compatibility amongst all nodes. 
+  
+  There is are definitely overhead issues that can arise with containers, but 
+  by and large they are exceedingly useful tools for maximizing developer
+  output by focusing on creating reproducible code rather than minor fixes and updates. 
 
 Answer both of these questions (baseline ~5 sentences) here in text.
 
