@@ -4,10 +4,6 @@ from acme import Product
 from acme_report import generate_products, inventory_report
 from acme_report import ADJECTIVES, NOUN
 
-#!/usr/bin/env python
-
-import unittest
-
 
 
 class AcmeProductTests(unittest.TestCase):
