@@ -30,7 +30,7 @@ class AcmeProductTests(unittest.TestCase):
 
 class AcmeReportTests(unittest.TestCase):
     '''
-    make sure Acme Reports are the tops!
+    Making sure Acme products are the tops!
     '''
     def test_default_num_products(self):
         products = generate_products()
