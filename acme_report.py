@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 
-    '''
-    Methods for generating and reporting on lists of products
-    '''
+   '''
+   Methods for generating and reporting on lists of products
+   '''
 from random import randint, sample, uniform, choice
 from acme import Product
 
 
 def generate_products(quantity=30):
-        '''
-        Method for generating a gallimaufry of Acme products
-        '''
+    '''
+    Method for generating a gallimaufry of Acme products
+    '''
     products = []
     adjective = ['Awesome', 'Shiny', 'Impressive', 'Portable', 'Improved']
     noun = ['Anvil', 'Catapult', 'Disguise', 'Mousetrap', '???']
