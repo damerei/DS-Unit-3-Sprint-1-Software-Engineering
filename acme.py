@@ -55,16 +55,13 @@ class BoxingGlove(Product):
                      identifier=identifier)
     def explode(self):
         '''
-        overwrite explode function to remind you gloves usually aren't volatile
+        Overwriting explode method because a glove is unlikely to explode. 
         '''
         return "...it's a glove."
 
     def punch(self):
         '''
-        translate the glove weight into an assessment of how much it
-        will hurt to be hit by
-        Output:
-        return phrase assess punch hurtiness
+       Measuring punching power, predicing correlative pain. 
         '''
         if self.weight < 5:
             return 'That tickles.'
