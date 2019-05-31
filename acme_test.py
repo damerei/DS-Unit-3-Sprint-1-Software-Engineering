@@ -21,12 +21,7 @@ class AcmeProductTests(unittest.TestCase):
     def test_default_product_weight(self):
         prod = Product('Test Product')
         self.assertEqual(prod.weight, 20)
-
-    def test_stealable_explodey(self):
-        prod = Product('Dynamite', 1000, 1, 100)
-        self.assertEqual(prod.explode(), '...BABOOM!!')
-        self.assertEqual(prod.stealability(), 'Very stealable!')
-
+        
 
 class AcmeReportTests(unittest.TestCase):
     '''
