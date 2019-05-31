@@ -31,16 +31,15 @@ class Product:
 
 def explode(self):
        '''
-        calculate how flammable or volatile a product is
-        '''
-            volatility = self.flammability * self.weight
-                if volatility < 10:
-                    return '...fizzle'
-                        elif volatility < 50:
-                            return '...boom!'
-                                else:
-                                    return '...BABOOM!!'
-
+       calculate how flammable or volatile a product is
+       '''
+        volatility = self.flammability * self.weight
+        if volatility < 10:
+            return '...fizzle'
+        elif volatility < 50:
+            return '...boom!'
+        else:
+            return '...BABOOM!
 
 class BoxingGlove(Product):
         '''
