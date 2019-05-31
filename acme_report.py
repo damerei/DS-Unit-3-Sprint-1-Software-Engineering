@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-   '''
-   Methods for generating and reporting on lists of products
-   '''
+'''
+Methods for generating and reporting on lists of products
+'''
 from random import randint, sample, uniform, choice
 from acme import Product
 
@@ -38,7 +38,7 @@ def inventory_report(products):
     
     # gather information for report
     for product in products:
-        unique_names.append(product.name)
+        names.append(product.name)
         agg_price += product.price
         agg_weight += product.weight
         agg_flammability += product.flammability
