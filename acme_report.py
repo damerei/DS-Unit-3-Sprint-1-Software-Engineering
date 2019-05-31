@@ -26,11 +26,10 @@ def generate_products(quantity=30):
     
     return products
 
-
 def inventory_report(products):
-        '''
-        Method for giving a report on the inventory
-        '''
+    '''
+    Method for giving a report on the inventory
+    '''
     names = []
     agg_price = 0
     agg_weight = 0
